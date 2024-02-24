@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.logo {
+  height: 2.3vw;
+}
+
+.line {
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  margin-left: 4vw;
+  margin-right: 3vw;
+}
+
+.grow-list {
+  flex-grow: 1;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  top: 3.88%;
+  margin-left: 3px;
+}
+
+.btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon {
+  display: none;
+}
+
+.button-small {
+  background-color: #b90ec5;
+  color: #ffffff;
+  font-size: 0.8vw;
+  padding: 0.5vw 1.5vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+.button-small:hover {
+  background-color: #ce00dc;
+}
+
+
+/* -------Nav Responsive--------- */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 3vw;
+  }
+  
+  .logo {
+    height: 3vw;
+  }
+  
+  .line {
+    margin-left: 6vw;
+    margin-right: 7vw;
+  }
+  
+  .list {
+    display: flex;
+    list-style: none;
+    gap: 3.5vw;
+  }
+  
+  .button-small {
+    font-size: 1vw;
+    padding: 0.8vw 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 0 3vw;
+  }
+  
+  .logo {
+    height: 4.5vw;
+  }
+  
+  .line {
+    margin-left: 6vw;
+    margin-right: 7vw;
+  }
+  
+  .list {
+    gap: 3.5vw;
+    font-size: 1.8vw;
+  }
+  
+  .button-small {
+    font-size: 1.7vw;
+    padding: 0.8vw 2vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 3vw;
+  }
+  
+  .logo {
+    height: 6vw;
+  }
+  
+  .line {
+    display: none;
+  }
+  
+  .list {
+    display: none;
+  }
+  
+  .button-small {
+    font-size: 2vw;
+    padding: 1vw 2.5vw;
+  }
+
+  #icon {
+    display: block;
+    position: relative;
+    right: 0;
+    margin-left: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 4vw;
+    padding-top: 1.3vw;
+  }
+  
+  .logo {
+    height: 8.5vw;
+  }
+  
+  .button-small {
+    font-size: 3vw;
+    padding: 1.8vw 3vw;
+    border-radius: 1.5vw;
+  }
+
+  #icon {
+    display: block;
+    position: relative;
+    right: 0;
+    margin-left: 4vw;
+  }
+}
+
+/* ---------Hero Section--------- */
+.hero {
+  width: 100%;
+  height: calc(100vh - 10vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.hero-heading {
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-description {
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.button-large {
+  font-size: 1.2vw;
+  background-color: #b90ec5;
+  color: #ffffff;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-large:hover {
+  background-color: #ce00dc;
+}
+
+
+@media (max-width: 1000px) {
+  .hero-heading {
+    font-size: 6vw;
+  }
+  
+  .hero-description {
+    font-size: 1.8vw;
+  }
+  
+  .button-large {
+    font-size: 1.6vw;
+    padding: 1.5vw 2.5vw;
+    border-radius: 1vw;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+  }
+
+  .hero-heading {
+    font-size: 8vw;
+    margin-top: 40vw;
+  }
+  
+  .hero-description {
+    font-size: 3.2vw;
+    margin-top: 4vw;
+  }
+  
+  .button-large {
+    font-size: 4vw;
+    padding: 3vw 8vw;
+    border-radius: 2vw;
+    font-weight: 600;
+    margin-top: 8vw;
+  }
+}
